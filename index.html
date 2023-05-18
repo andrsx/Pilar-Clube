@@ -15,6 +15,7 @@
 </head>
 
 <body>
+  <!-- HEADER -->
   <header class="cabecalho container">
     <nav class="cabecalho__navegacao">
       <img src="./imagens/pilar-clube-branco.svg" alt="Logo Pilar Club" class="cabecalho__logo">
@@ -37,6 +38,7 @@
       </ul>
     </nav>
   </header>
+  <!-- MAIN -->
   <main>
     <section class="chamada">
       <div class="chamada__imagem">
@@ -47,6 +49,7 @@
       </div>
     </section>
   </main>
+  <!-- SOBRE -->
   <section class="sobre container">
     <div class="sobre__coluna">
       <div class="sobre__coluna-1">
@@ -85,6 +88,7 @@
       </div>
     </div>
   </section>
+  <!-- PLANOS -->
   <section class="planos container">
     <div class="planos__infos">
       <h1 class="planos__infos-titulo titulo__h1">Nossos planos</h1>
@@ -97,10 +101,11 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu sapien est.
             Cras accumsan maximus odio. Nullam fringilla arcu enim, nec iaculis ipsum bibendum vitae.
           </p>
-          <div class="planos__lista-item-saiba-mais">
+          <input type="submit" value="Saiba Mais" class="planos__lista-item-saiba-mais-btn">
+          <!-- <div class="planos__lista-item-saiba-mais">
             <i class="fa-solid fa-circle-info"></i>
             <a href="#">Saiba mais</a>
-          </div>
+          </div> -->
         </div>
         <!-- NOVO ITEM -->
         <div class="planos__lista-item">
@@ -111,10 +116,11 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu sapien est.
             Cras accumsan maximus odio. Nullam fringilla arcu enim, nec iaculis ipsum bibendum vitae.
           </p>
-          <div class="planos__lista-item-saiba-mais">
+          <input type="submit" value="Saiba Mais" class="planos__lista-item-saiba-mais-btn">
+          <!-- <div class="planos__lista-item-saiba-mais">
             <i class="fa-solid fa-circle-info"></i>
             <a href="#">Saiba mais</a>
-          </div>
+          </div> -->
         </div>
         <!-- NOVO ITEM -->
         <div class="planos__lista-item">
@@ -125,12 +131,34 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu sapien est.
             Cras accumsan maximus odio. Nullam fringilla arcu enim, nec iaculis ipsum bibendum vitae.
           </p>
-          <div class="planos__lista-item-saiba-mais">
-            <i class="fa-solid fa-circle-info"></i>
-            <a href="#">Saiba mais</a>
-          </div>
+          <input type="submit" value="Saiba Mais" class="planos__lista-item-saiba-mais-btn">
         </div>
       </div>
+    </div>
+  </section>
+  <!-- LOCALIZAÇÃO -->
+  <section class="localizacao container">
+    <h1 class="localizacao__titulo titulo__h1">Localização</h1>
+    <div class="localizacao__infos">
+      <!-- MAPA -->
+      <div class="localizacao__infos-mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d503110.8610668744!2d-40.37208769806584!3d-9.887767274375355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x772d59551e1dab7%3A0xd0f8b07a34e3f80f!2sPilar%2C%20Jaguarari%20-%20BA!5e0!3m2!1spt-BR!2sbr!4v1684439734888!5m2!1spt-BR!2sbr"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <!-- <div class="localizacao__infos-lista">
+        <div class="localizacao__infos-lista-img">
+          <img src="./imagens/Frame-6.png" alt="">
+        </div>
+        <div class="localizacao__infos-lista-img">
+          <img src="./imagens/Frame-4.png" alt="">
+        </div>
+        <div class="localizacao__infos-lista-img">
+          <img src="./imagens/Frame-5.png" alt="">
+        </div>
+      </div> -->
     </div>
   </section>
   <script src="./main.js"></script>

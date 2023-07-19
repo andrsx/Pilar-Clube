@@ -16,28 +16,32 @@
 
 <body>
   <!-- HEADER -->
-  <header class="cabecalho container">
-    <nav class="cabecalho__navegacao">
-      <img src="./imagens/pilar-clube-branco.svg" alt="Logo Pilar Club" class="cabecalho__logo">
-      <ul>
-        <li class="cabecalho__link">
-          <a href="#">Inicio</a>
-        </li>
-        <li class="cabecalho__link">
-          <a href="#">Sobre</a>
-        </li>
-        <li class="cabecalho__link">
-          <a href="#">Planos</a>
-        </li>
-        <li class="cabecalho__link">
-          <a href="#">Localização</a>
-        </li>
-        <li class="cabecalho__link">
-          <a href="#">Contato</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <div id="header">
+    <header class="cabecalho container">
+      <nav class="cabecalho__navegacao">
+        <img src="./imagens/pilar-clube-branco.svg" alt="Logo Pilar Club" class="cabecalho__logo">
+        <ul id="sidemenu">
+          <li class="cabecalho__link">
+            <a href="#header">Inicio</a>
+          </li>
+          <li class="cabecalho__link">
+            <a href="#sobre">Sobre</a>
+          </li>
+          <li class="cabecalho__link">
+            <a href="#planos">Planos</a>
+          </li>
+          <li class="cabecalho__link">
+            <a href="#localizacao">Localização</a>
+          </li>
+          <li class="cabecalho__link">
+            <a href="#contato">Contato</a>
+          </li>
+          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </nav>
+    </header>
+  </div>
   <!-- MAIN -->
   <main>
     <section class="chamada">
@@ -50,134 +54,145 @@
     </section>
   </main>
   <!-- SOBRE -->
-  <section class="sobre container">
-    <div class="sobre__coluna">
-      <div class="sobre__coluna-1">
-        <img src="./imagens/Frame-3.png" alt="Imagem seção sobre" class="sobre__coluna-1-imagem">
+  <div id="sobre">
+    <section class="sobre container">
+      <div class="sobre__coluna">
+        <div class="sobre__coluna-1">
+          <img src="./imagens/Frame-3.png" alt="Imagem seção sobre" class="sobre__coluna-1-imagem">
+        </div>
+        <div class="sobre__coluna-2">
+          <h1 class="sobre__coluna-2-titulo titulo__h1">Sobre</h1>
+          <p class="sobre__coluna-2-descricao">Bem-vindo ao Pilar Clube! Nós somos um lugar perfeito para
+            relaxar, se exercitar e aproveitar momentos de diversão com sua família, com um ambiente acolhedor e seguro
+            para pessoas de todas as idades. Com uma variedade de instalações incríveis, oferecemos piscinas
+            refrescantes,
+            academias modernas e spas relaxantes para toda a família desfrutar.</p>
+          <div class="sobre__coluna-2-tabs">
+            <p class="sobre__coluna-2-tabs-links link-ativo" id="piscina">Piscinas</p>
+            <p class="sobre__coluna-2-tabs-links" id="academia">Academia</p>
+            <p class="sobre__coluna-2-tabs-links" id="spa">Spá</p>
+          </div>
+          <div class="sobre__coluna-2-conteudo tab-ativo" id="piscina-conteudo">
+            <ul>
+              <li><span>Piscina principal</span><br>500m de extensão</li>
+              <li><span>Piscina infantil</span><br>Playground interno</li>
+            </ul>
+          </div>
+          <div class="sobre__coluna-2-conteudo" id="academia-conteudo">
+            <ul>
+              <li><span>Academia principal</span><br>Personal trainer exclusivo</li>
+              <li><span>Academia alternativa</span><br>Pilates, Zumba e muito mais</li>
+            </ul>
+          </div>
+          <div class="sobre__coluna-2-conteudo" id="spa-conteudo">
+            <ul>
+              <li><span>Spá principal</span><br>Tratamento completo</li>
+              <li><span>Spá alternativo</span><br>Tratamentos alternativos</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="sobre__coluna-2">
-        <h1 class="sobre__coluna-2-titulo titulo__h1">Sobre</h1>
-        <p class="sobre__coluna-2-descricao">Bem-vindo ao Pilar Clube! Nós somos um lugar perfeito para
-          relaxar, se exercitar e aproveitar momentos de diversão com sua família, com um ambiente acolhedor e seguro
-          para pessoas de todas as idades. Com uma variedade de instalações incríveis, oferecemos piscinas refrescantes,
-          academias modernas e spas relaxantes para toda a família desfrutar.</p>
-        <div class="sobre__coluna-2-tabs">
-          <p class="sobre__coluna-2-tabs-links link-ativo" id="piscina">Piscinas</p>
-          <p class="sobre__coluna-2-tabs-links" id="academia">Academia</p>
-          <p class="sobre__coluna-2-tabs-links" id="spa">Spá</p>
-        </div>
-        <div class="sobre__coluna-2-conteudo tab-ativo" id="piscina-conteudo">
-          <ul>
-            <li><span>Piscina principal</span><br>500m de extensão</li>
-            <li><span>Piscina infantil</span><br>Playground interno</li>
-          </ul>
-        </div>
-        <div class="sobre__coluna-2-conteudo" id="academia-conteudo">
-          <ul>
-            <li><span>Academia principal</span><br>Personal trainer exclusivo</li>
-            <li><span>Academia alternativa</span><br>Pilates, Zumba e muito mais</li>
-          </ul>
-        </div>
-        <div class="sobre__coluna-2-conteudo" id="spa-conteudo">
-          <ul>
-            <li><span>Spá principal</span><br>Tratamento completo</li>
-            <li><span>Spá alternativo</span><br>Tratamentos alternativos</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
   <!-- PLANOS -->
-  <section class="planos container">
-    <div class="planos__infos">
-      <h1 class="planos__infos-titulo titulo__h1">Nossos planos</h1>
-      <div class="planos__lista">
-        <div class="planos__lista-item">
-          <i class="fa-solid fa-bolt-lightning"></i>
-          <h2 class="planos__lista-item-titulo">Plano Weekend</h2>
-          <h3 class="planos__lista-item-preco">R$ 100</h3>
-          <p class="planos__lista-item-descricao">
-            Este plano é ideal para casais ou duplas. Ele permite acesso à nossa piscina principal, academia principal e
-            spá principal.
-          </p>
-          <input type="submit" value="Saiba Mais" class="planos__lista-item-saiba-mais-btn">
-          <!-- <div class="planos__lista-item-saiba-mais">
-            <i class="fa-solid fa-circle-info"></i>
-            <a href="#">Saiba mais</a>
-          </div> -->
-        </div>
-        <!-- NOVO ITEM -->
-        <div class="planos__lista-item">
-          <i class="fa-solid fa-star"></i>
-          <h2 class="planos__lista-item-titulo">Plano Família</h2>
-          <h3 class="planos__lista-item-preco">R$ 150</h3>
-          <p class="planos__lista-item-descricao">
-            Projetado para famílias de até 4 pessoas, esse plano oferece acesso à piscina principal e à piscina
-            infantil, academia principal e spá principal.
-          </p>
-          <input type="submit" value="Saiba Mais" class="planos__lista-item-saiba-mais-btn">
-          <!-- <div class="planos__lista-item-saiba-mais">
-            <i class="fa-solid fa-circle-info"></i>
-            <a href="#">Saiba mais</a>
-          </div> -->
-        </div>
-        <!-- NOVO ITEM -->
-        <div class="planos__lista-item">
-          <i class="fa-solid fa-crown"></i>
-          <h2 class="planos__lista-item-titulo">Plano Família +</h2>
-          <h3 class="planos__lista-item-preco">R$ 200</h3>
-          <p class="planos__lista-item-descricao">
-            Perfeito para famílias maiores, com até 6 pessoas, tenha acesso à
-            piscina principal e à piscina infantil, além das duas academias e spas disponíveis.
-          </p>
-          <input type="submit" value="Saiba Mais" class="planos__lista-item-saiba-mais-btn">
+  <div id="planos">
+    <section class="planos container">
+      <div class="planos__infos">
+        <h1 class="planos__infos-titulo titulo__h1">Nossos planos</h1>
+        <div class="planos__lista">
+          <div class="planos__lista-item">
+            <i class="fa-solid fa-bolt-lightning"></i>
+            <h2 class="planos__lista-item-titulo">Plano Weekend</h2>
+            <h3 class="planos__lista-item-preco">R$ 100</h3>
+            <p class="planos__lista-item-descricao">
+              Este plano é ideal para casais ou duplas. Ele permite acesso à nossa piscina principal, academia principal
+              e
+              spá principal.
+            </p>
+            <input type="submit" value="Saiba Mais" class="planos__lista-item-saiba-mais-btn">
+            <!-- <div class="planos__lista-item-saiba-mais">
+              <i class="fa-solid fa-circle-info"></i>
+              <a href="#">Saiba mais</a>
+            </div> -->
+          </div>
+          <!-- NOVO ITEM -->
+          <div class="planos__lista-item">
+            <i class="fa-solid fa-star"></i>
+            <h2 class="planos__lista-item-titulo">Plano Família</h2>
+            <h3 class="planos__lista-item-preco">R$ 150</h3>
+            <p class="planos__lista-item-descricao">
+              Projetado para famílias de até 4 pessoas, esse plano oferece acesso à piscina principal e à piscina
+              infantil, academia principal e spá principal.
+            </p>
+            <input type="submit" value="Saiba Mais" class="planos__lista-item-saiba-mais-btn">
+            <!-- <div class="planos__lista-item-saiba-mais">
+              <i class="fa-solid fa-circle-info"></i>
+              <a href="#">Saiba mais</a>
+            </div> -->
+          </div>
+          <!-- NOVO ITEM -->
+          <div class="planos__lista-item">
+            <i class="fa-solid fa-crown"></i>
+            <h2 class="planos__lista-item-titulo">Plano Família +</h2>
+            <h3 class="planos__lista-item-preco">R$ 200</h3>
+            <p class="planos__lista-item-descricao">
+              Perfeito para famílias maiores, com até 6 pessoas, tenha acesso à
+              piscina principal e à piscina infantil, além das duas academias e spas disponíveis.
+            </p>
+            <input type="submit" value="Saiba Mais" class="planos__lista-item-saiba-mais-btn">
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
   <!-- LOCALIZAÇÃO -->
-  <section class="localizacao container">
-    <h1 class="localizacao__titulo titulo__h1">Localização</h1>
-    <div class="localizacao__infos">
-      <!-- MAPA -->
-      <div class="localizacao__infos-mapa">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d503110.8610668744!2d-40.37208769806584!3d-9.887767274375355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x772d59551e1dab7%3A0xd0f8b07a34e3f80f!2sPilar%2C%20Jaguarari%20-%20BA!5e0!3m2!1spt-BR!2sbr!4v1684439734888!5m2!1spt-BR!2sbr"
-          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+  <div id="localizacao">
+    <section class="localizacao container">
+      <h1 class="localizacao__titulo titulo__h1">Localização</h1>
+      <div class="localizacao__infos">
+        <!-- MAPA -->
+        <div class="localizacao__infos-mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d503110.8610668744!2d-40.37208769806584!3d-9.887767274375355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x772d59551e1dab7%3A0xd0f8b07a34e3f80f!2sPilar%2C%20Jaguarari%20-%20BA!5e0!3m2!1spt-BR!2sbr!4v1684439734888!5m2!1spt-BR!2sbr"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <!-- <div class="localizacao__infos-lista">
+          <div class="localizacao__infos-lista-img">
+            <img src="./imagens/Frame-6.png" alt="">
+          </div>
+          <div class="localizacao__infos-lista-img">
+            <img src="./imagens/Frame-4.png" alt="">
+          </div>
+          <div class="localizacao__infos-lista-img">
+            <img src="./imagens/Frame-5.png" alt="">
+          </div>
+        </div> -->
       </div>
-      <!-- <div class="localizacao__infos-lista">
-        <div class="localizacao__infos-lista-img">
-          <img src="./imagens/Frame-6.png" alt="">
-        </div>
-        <div class="localizacao__infos-lista-img">
-          <img src="./imagens/Frame-4.png" alt="">
-        </div>
-        <div class="localizacao__infos-lista-img">
-          <img src="./imagens/Frame-5.png" alt="">
-        </div>
-      </div> -->
-    </div>
-  </section>
+    </section>
+  </div>
   <!-- CONTATO -->
-  <section class="contato container">
-    <div class="contato__coluna">
-      <div class="contato__esquerda">
-        <h1 class="contato__esquerda-titulo titulo__h1">Contato</h1>
-        <p><i class="fa-solid fa-phone"></i>3487 2023</p>
-        <p><i class="fa-solid fa-paper-plane"></i>pilar@clube.com</p>
+  <div id="contato">
+    <section class="contato container">
+      <div class="contato__coluna">
+        <div class="contato__esquerda">
+          <h1 class="contato__esquerda-titulo titulo__h1">Contato</h1>
+          <p><i class="fa-solid fa-phone"></i>3487 2023</p>
+          <p><i class="fa-solid fa-paper-plane"></i>pilar@clube.com</p>
+        </div>
+        <div class="contato__direita">
+          <form class="contato__direita-formulario">
+            <input type="text" name="Nome" placeholder="Seu Nome" required>
+            <input type="email" name="emial" placeholder="Seu email" required>
+            <textarea name="message" rows="6" placeholder="Mensagem" required></textarea>
+            <button type="submit" class="contato__direita-formulario-btn btn">Enviar</button>
+          </form>
+        </div>
       </div>
-      <div class="contato__direita">
-        <form class="contato__direita-formulario">
-          <input type="text" name="Nome" placeholder="Seu Nome" required>
-          <input type="email" name="emial" placeholder="Seu email" required>
-          <textarea name="message" rows="6" placeholder="Mensagem" required></textarea>
-          <button type="submit" class="contato__direita-formulario-btn btn">Enviar</button>
-        </form>
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
+  <!-- FOOTER -->
   <footer>
     <div class="footer_elementos container">
       <div class="footer_elementos-logos">

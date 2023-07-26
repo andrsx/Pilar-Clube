@@ -1,3 +1,17 @@
+/* HEADER */
+
+var sidemenu = document.getElementById('sidemenu')
+
+function openMenu() {
+  sidemenu.style.right = '0';
+}
+
+function closeMenu() {
+  sidemenu.style.right = '-200px';
+}
+
+/* SOBRE */
+
 function adicionarClassesAtivas() {
   const links = document.querySelectorAll('.sobre__coluna-2-tabs-links')
   // Loop através de cada link

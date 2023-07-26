@@ -1,10 +1,10 @@
 <h1 align="center"> Pilar Clube </h1>
  
 <p align="center">
-  <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+  <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 </p>
 
-> Status do Projeto: ⏳
+> Status do Projeto: :heavy_check_mark: 
 
 ### Tópicos 
 
@@ -15,10 +15,12 @@
 ## Descrição do projeto 
 
 <p align="justify">
-Site simples que está sendo desenvolvido em HTML, CSS e JavaScript, como forma de aplicar os conhecimentos adquiridos dessa área através do Programa Desenvolve 2023 do Grupo Boticário.
+Site simples desenvolvido em HTML, CSS e JavaScript, como forma de aplicar os conhecimentos adquiridos dessa área através do Programa Desenvolve 2023 do Grupo Boticário.
 </p>
 
 ## Projeto em execução
+
+> https://pilar-clube.vercel.app/
 
 ![1](https://raw.githubusercontent.com/andrsx/Pilar-Clube/desenvolvimento/imagens/print-1.png)
 

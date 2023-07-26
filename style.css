@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #fff;
   color: #094074;
@@ -38,6 +42,7 @@ body {
   /* width: 100%; */
   /* height: 100vh; */
   background: #094074;
+  color: #fff;
 }
 
 .cabecalho__navegacao {
@@ -92,6 +97,7 @@ body {
 .chamada__imagem {
   width: 100%;
   position: relative;
+
 }
 
 .chamada__imagem img {
@@ -382,4 +388,66 @@ footer {
 .footer_elementos-logos {
   display: flex;
   align-items: center;
+}
+
+nav .fa-solid {
+  display: none;
+}
+
+/* RESPONSIVIDADE  */
+
+@media only screen and (max-width: 600px) {
+
+  .chamada__imagem img {
+    content: url("/imagens/Frame-7.png");
+  }
+
+  .chamada__titulo {
+    text-align: center;
+  }
+
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+
+  .cabecalho__navegacao ul {
+    background: #093b69;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  .cabecalho__navegacao ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav .fa-xmark {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  .sobre__coluna-1, .sobre__coluna-2 {
+    flex-basis: 100%;
+  }
+
+  .sobre__coluna-1 {
+    margin-bottom: 30px;
+  }
+
+  .contato__coluna {
+    display: block;
+  }
+
+  .contato__esquerda, .contato__direita {
+    flex-basis: 100%;
+  }
 }
